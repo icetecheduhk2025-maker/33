@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: #000000; color: rgba(0, 0, 0, 0.45); -webkit-text-stroke: rgba(0, 0, 0, 0.45)}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85)}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: #40991a; -webkit-text-stroke: #40991a}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: #68b1ff; -webkit-text-stroke: #68b1ff}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85); min-height: 15.0px}
+    span.s1 {font-kerning: none; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: 0px rgba(0, 0, 0, 0.85)}
+    span.s2 {font-kerning: none}
+    span.s3 {font-kerning: none; color: #bc7f06; -webkit-text-stroke: 0px #bc7f06}
+    span.s4 {font-kerning: none; color: #2fa59b; -webkit-text-stroke: 0px #2fa59b}
+    span.s5 {font-kerning: none; color: #68b1ff; -webkit-text-stroke: 0px #68b1ff}
+    span.s6 {font-kerning: none; color: #40991a; -webkit-text-stroke: 0px #40991a}
+    span.s7 {font-kerning: none; color: #a03eee; -webkit-text-stroke: 0px #a03eee}
+    span.s8 {font-kerning: none; color: #fc443d; -webkit-text-stroke: 0px #fc443d}
+    span.s9 {font-kerning: none; color: #dc2983; -webkit-text-stroke: 0px #dc2983}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!</span><span class="s2">DOCTYPE html</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s2">&lt;html&gt;</span></p>
+<p class="p2"><span class="s2">&lt;head&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;title&gt;Round 5 Marketing &amp; Revenue Projection&lt;/title&gt;</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script </span><span class="s3">src</span><span class="s1">="</span><span class="s2">https://cdn.jsdelivr.net/npm/chart.js</span><span class="s1">"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">canvas</span><span class="s2"> </span><span class="s1">{</span><span class="s2"> </span><span class="s3">width</span><span class="s1">:</span><span class="s2"> 100%</span><span class="s1">;</span><span class="s2"> </span><span class="s3">max-width</span><span class="s1">:</span><span class="s2"> 800px</span><span class="s1">;</span><span class="s2"> </span><span class="s3">margin</span><span class="s1">:</span><span class="s2"> 20px auto</span><span class="s1">;</span><span class="s2"> </span><span class="s1">}</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s4">h2</span><span class="s2"> </span><span class="s1">{</span><span class="s2"> </span><span class="s3">text-align</span><span class="s1">:</span><span class="s2"> center</span><span class="s1">;</span><span class="s2"> </span><span class="s3">color</span><span class="s1">:</span><span class="s2"> #333</span><span class="s1">;</span><span class="s2"> </span><span class="s1">}</span></p>
+<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;/style&gt;</span></p>
+<p class="p2"><span class="s2">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s2">&lt;body&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;h2&gt;Round 5: Revenue by Market &amp; Marketing Expense&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;canvas </span><span class="s3">id</span><span class="s2">="</span><span class="s6">revenueMarketingChart</span><span class="s2">"&gt;&lt;/canvas&gt;</span></p>
+<p class="p5"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;h2&gt;Marketing Expense-to-Sales Ratio (Round 1-5)&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;canvas </span><span class="s3">id</span><span class="s2">="</span><span class="s6">ratioChart</span><span class="s2">"&gt;&lt;/canvas&gt;</span></p>
+<p class="p5"><span class="s2"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">// Chart 1: Revenue by Market &amp; Marketing Expense</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s2"> ctx1 = document.</span><span class="s8">getElementById</span><span class="s2">(</span><span class="s6">'revenueMarketingChart'</span><span class="s2">).</span><span class="s8">getContext</span><span class="s2">(</span><span class="s6">'2d'</span><span class="s2">);</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s7">new</span><span class="s2"> Chart(ctx1, {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s3">type</span><span class="s2">: </span><span class="s6">'bar'</span><span class="s2">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s3">data</span><span class="s2">: {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">labels</span><span class="s1">: [</span><span class="s2">'Market 1'</span><span class="s1">, </span><span class="s2">'Market 2'</span><span class="s1">, </span><span class="s2">'Market 3'</span><span class="s1">, </span><span class="s2">'Market 4'</span><span class="s1">, </span><span class="s2">'Total Marketing Expense'</span><span class="s1">],</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span></span><span class="s3">datasets</span><span class="s2">: [{</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">label</span><span class="s2">: </span><span class="s6">'Amount ($K)'</span><span class="s2">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">data</span><span class="s2">: [</span><span class="s9">2730</span><span class="s2">, </span><span class="s9">1450</span><span class="s2">, </span><span class="s9">2730</span><span class="s2">, </span><span class="s9">1000</span><span class="s2">, </span><span class="s9">900</span><span class="s2">],</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">backgroundColor</span><span class="s2">: [</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s2">'#3498db'</span><span class="s1">, </span><span class="s2">'#2ecc71'</span><span class="s1">, </span><span class="s2">'#3498db'</span><span class="s1">, </span><span class="s2">'#2ecc71'</span><span class="s1">, </span><span class="s2">'#e74c3c'</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span>],</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">borderWidth</span><span class="s2">: </span><span class="s9">1</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span>}]</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s3">options</span><span class="s2">: {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span></span><span class="s3">scales</span><span class="s2">: {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">y</span><span class="s2">: { </span><span class="s3">beginAtZero</span><span class="s2">: </span><span class="s9">true</span><span class="s2">, </span><span class="s3">title</span><span class="s2">: { </span><span class="s3">display</span><span class="s2">: </span><span class="s9">true</span><span class="s2">, </span><span class="s3">text</span><span class="s2">: </span><span class="s6">'Amount ($K)'</span><span class="s2"> } }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span></span><span class="s3">plugins</span><span class="s2">: {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">legend</span><span class="s2">: { </span><span class="s3">display</span><span class="s2">: </span><span class="s9">false</span><span class="s2"> },</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">title</span><span class="s1">: { </span><span class="s3">display</span><span class="s1">: </span><span class="s9">true</span><span class="s1">, </span><span class="s3">text</span><span class="s1">: </span><span class="s2">'Revenue Distribution by Market &amp; Marketing Expense (Round 5)'</span><span class="s1"> }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p5"><span class="s2"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s2">// Chart 2: Marketing Expense-to-Sales Ratio (Round 1-5)</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s2"> ctx2 = document.</span><span class="s8">getElementById</span><span class="s2">(</span><span class="s6">'ratioChart'</span><span class="s2">).</span><span class="s8">getContext</span><span class="s2">(</span><span class="s6">'2d'</span><span class="s2">);</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s7">new</span><span class="s2"> Chart(ctx2, {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s3">type</span><span class="s2">: </span><span class="s6">'bar'</span><span class="s2">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s3">data</span><span class="s2">: {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">labels</span><span class="s1">: [</span><span class="s2">'Round 1'</span><span class="s1">, </span><span class="s2">'Round 2'</span><span class="s1">, </span><span class="s2">'Round 3'</span><span class="s1">, </span><span class="s2">'Round 4'</span><span class="s1">, </span><span class="s2">'Round 5 (Projected)'</span><span class="s1">],</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span></span><span class="s3">datasets</span><span class="s2">: [{</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">label</span><span class="s1">: </span><span class="s2">'Marketing Expense-to-Sales Ratio (%)'</span><span class="s1">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">data</span><span class="s2">: [</span><span class="s9">25.4</span><span class="s2">, </span><span class="s9">13.3</span><span class="s2">, </span><span class="s9">11.5</span><span class="s2">, </span><span class="s9">10.7</span><span class="s2">, </span><span class="s9">11.4</span><span class="s2">],</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">backgroundColor</span><span class="s2">: </span><span class="s6">'#9b59b6'</span><span class="s2">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">borderWidth</span><span class="s2">: </span><span class="s9">1</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span>}]</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s3">options</span><span class="s2">: {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span></span><span class="s3">scales</span><span class="s2">: {</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">y</span><span class="s2">: { </span><span class="s3">beginAtZero</span><span class="s2">: </span><span class="s9">true</span><span class="s2">, </span><span class="s3">title</span><span class="s2">: { </span><span class="s3">display</span><span class="s2">: </span><span class="s9">true</span><span class="s2">, </span><span class="s3">text</span><span class="s2">: </span><span class="s6">'Ratio (%)'</span><span class="s2"> }, </span><span class="s3">min</span><span class="s2">: </span><span class="s9">0</span><span class="s2">, </span><span class="s3">max</span><span class="s2">: </span><span class="s9">30</span><span class="s2"> },</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                    </span></span><span class="s3">x</span><span class="s2">: { </span><span class="s3">title</span><span class="s2">: { </span><span class="s3">display</span><span class="s2">: </span><span class="s9">true</span><span class="s2">, </span><span class="s3">text</span><span class="s2">: </span><span class="s6">'Round'</span><span class="s2"> } }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span>},</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span></span><span class="s3">plugins</span><span class="s2">: {</span></p>
+<p class="p3"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">title</span><span class="s1">: { </span><span class="s3">display</span><span class="s1">: </span><span class="s9">true</span><span class="s1">, </span><span class="s3">text</span><span class="s1">: </span><span class="s2">'Marketing Expense-to-Sales Ratio Trend'</span><span class="s1"> }</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p2"><span class="s2">&lt;/body&gt;</span></p>
+<p class="p2"><span class="s2">&lt;/html&gt;</span></p>
+</body>
+</html>
